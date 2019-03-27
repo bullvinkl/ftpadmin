@@ -1,0 +1,26 @@
+body {
+    font-size: 14px;
+    margin: 0;
+}
+
+tr:hover {
+    background: #F5F5F5;
+}
+
+.dis {
+    background-color: #eee;
+    color: #666;
+    cursor: default;
+}
+
+h4, th, td, small {
+    cursor: default;
+}
+
+button, .hand {
+    cursor: pointer;
+}
+
+.card {
+    border: 0;
+}
