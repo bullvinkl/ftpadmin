@@ -90,9 +90,9 @@ $comment = '' . $_SESSION['message_header'] . "\r\n" .
 	'Дата добавления: ' . "$date \r\n" .
 	'' . "$temp_mail \r\n" .
 	'IP: ' . "$local_ip";
-$headers = 'From: noreply@digimap.ru' . "\r\n" .
-    'Reply-To: noreply@digimap.ru' . "\r\n" .
-    'Bcc: m.makarov@digimap.ru' . "\r\n" .
+$headers = 'From: noreply@example.ru' . "\r\n" .
+    'Reply-To: noreply@example.ru' . "\r\n" .
+    'Bcc: user@example.ru' . "\r\n" .
     'Content-Type: text/plain;charset=UTF-8' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 mail($email, $subject, $comment, $headers);
@@ -150,9 +150,9 @@ $comment = '' . $_SESSION['message_header'] . "\r\n" .
 	'Дата обновления: ' . "$date \r\n" .
 	'' . "$temp_mail \r\n" .
 	'IP: ' . "$local_ip";
-$headers = 'From: noreply@digimap.ru' . "\r\n" .
-    'Reply-To: noreply@digimap.ru' . "\r\n" .
-    'Bcc: m.makarov@digimap.ru' . "\r\n" .
+$headers = 'From: noreply@example.ru' . "\r\n" .
+    'Reply-To: noreply@example.ru' . "\r\n" .
+    'Bcc: user@example.ru' . "\r\n" .
     'Content-Type: text/plain;charset=UTF-8' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 mail($email, $subject, $comment, $headers);
@@ -209,9 +209,9 @@ $comment = '' . $_SESSION['message_header'] . "\r\n" .
 	'Имя пользователя: ' . "$username \r\n" .
 	'Дата удаления: ' . "$date \r\n" .
 	'IP: ' . "$local_ip";
-$headers = 'From: noreply@digimap.ru' . "\r\n" .
-    'Reply-To: noreply@digimap.ru' . "\r\n" .
-    'Bcc: m.makarov@digimap.ru' . "\r\n" .
+$headers = 'From: noreply@example.ru' . "\r\n" .
+    'Reply-To: noreply@example.ru' . "\r\n" .
+    'Bcc: user@example.ru' . "\r\n" .
     'Content-Type: text/plain;charset=UTF-8' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 mail($email, $subject, $comment, $headers);
@@ -264,8 +264,8 @@ $subject = 'srv-ftp-01: ' . $_SESSION['message_header'];
 $comment = 'Имя пользователя: ' . "$username \r\n" .
 	'Пароль: ' . "$password \r\n" .
 	'Дата обновления: ' . "$date";
-$headers = 'From: noreply@digimap.ru' . "\r\n" .
-    'Reply-To: m.makarov@digimap.ru' . "\r\n" .
+$headers = 'From: noreply@example.ru' . "\r\n" .
+    'Reply-To: user@example.ru' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 mail($email, $subject, $comment, $headers);
 
