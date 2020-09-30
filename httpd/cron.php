@@ -20,9 +20,9 @@ while ($row = mysqli_fetch_array($results)) {
 			'Тип учетной записи: Временная' . "\r\n" .
 			'Дата удаления: ' . "$date_end \r\n" .
 			'Чтобы продлить срок действия учетной записи, обновите пароль пользователя через панель управления: http://192.168.1.19/server.php?edituser=' . $id;
-		$headers = 'From: noreply@digimap.ru' . "\r\n" .
-    			'Reply-To: noreply@digimap.ru' . "\r\n" .
-    			'Bcc: m.makarov@digimap.ru' . "\r\n" .
+		$headers = 'From: noreply@example.ru' . "\r\n" .
+    			'Reply-To: noreply@example.ru' . "\r\n" .
+    			'Bcc: user@example.ru' . "\r\n" .
 			'Content-Type: text/plain;charset=UTF-8' . "\r\n" .
     			'X-Mailer: PHP/' . phpversion();
 		mail($email, $subject, $comment, $headers);
@@ -58,9 +58,9 @@ while ($row = mysqli_fetch_array($results)) {
 			'Имя пользователя: ' . "$username \r\n" .
 			'Тип учетной записи: Временная' . "\r\n" .
 			'Дата удаления: ' . "$date_end \r\n";
-		$headers = 'From: noreply@digimap.ru' . "\r\n" .
-    			'Reply-To: noreply@digimap.ru' . "\r\n" .
-    			'Bcc: m.makarov@digimap.ru' . "\r\n" .
+		$headers = 'From: noreply@example.ru' . "\r\n" .
+    			'Reply-To: noreply@example.ru' . "\r\n" .
+    			'Bcc: user@example.ru' . "\r\n" .
 			'Content-Type: text/plain;charset=UTF-8' . "\r\n" .
     			'X-Mailer: PHP/' . phpversion();
 		mail($email, $subject, $comment, $headers);
